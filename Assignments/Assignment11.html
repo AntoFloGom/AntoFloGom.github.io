@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Flexbox Containers</title>
+    <style>
+      body {
+        font-family: Verdana;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .flexChild {
+        background-color: lavender;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+      }
+      .flexChildWide {
+        text-align: center;
+        width: 300px;
+      }
+      .flexChildTall {
+        height: 100px;
+      }
+      .flexChildGiant {
+        height: 200px;
+      }
+      .flexContainer {
+        background-color: darksalmon;
+        border-radius: 4px;
+        display: flex;
+      }
+      .flexDirection {
+        flex-direction: row;
+      }
+      .flexDirection2 {
+        flex-direction: column;
+      }
+      .flexWrap {
+        flex-wrap: wrap;
+      }
+      .justifyContent {
+        justify-content: space-evenly;
+      }
+      .alignItems {
+        align-items: flex-end;
+      }
+      .flexContainer {
+        display: flex;
+        background-color: lightblue;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .box {
+        background-color: lavender;
+        border: 2px solid gray;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 8px 14px;
+        text-align: center;
+      }
+      .order1 {
+        order: 1;
+      }
+      .order2 {
+        order: 2;
+      }
+      .order3 {
+        order: 3;
+      }
+      .order4 {
+        order: 4;
+      }
+      </style>
+      </head>
+      <body>
+        <h2>Reverse order</h2>
+        <div class="flexContainer">
+          <div class="box order4">A</div>
+          <div class="box order3">B</div>
+          <div class="box order2">C</div>
+          <div class="box order1">D</div>
+         </div>
+         <h2>Flex Wrap</h2>
+         <div class="flexContainer flexWrap">
+           <div class="flexChild">A</div>
+           <div class="flexChild flexChildWide">B</div>
+           <div class="flexChild">C</div>
+           <div class="flexChild flexChildWide">D</div>
+           <div class="flexChild flexChildWide">E</div>
+           <div class="flexChild">F</div>
+           </div>
+           <h2>Align to end</h2>
+           <div class="flexContainer flexDirection2 alignItems">
+             <div class="flexChild">A</div>
+             <div class="flexChild flexChildTall">B</div>
+             <div class="flexChild">C</div>
+             <div class="flexChild flexChildGiant">D</div>
+             <div class="flexChild flexChildWide flexChildTall">E</div>
+             <div class="flexChild">F</div>
+             </div>
+           <h2>Justify Content</h2>
+           <div class="flexContainer justifyContent">
+             <div class="flexChild">A</div>
+             <div class="flexChild flexChildWide">B</div>
+             <div class="flexChild">C</div>
+             </div>
+        </body>
+        </html>
