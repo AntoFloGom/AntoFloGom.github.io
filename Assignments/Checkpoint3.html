@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+      }
+      .header {
+        background-color: lightblue;
+        padding: 50px;
+        grid-column: 1 / 4;
+        grid-row: 1;
+      }
+      .nav {
+        background-color: #CBC3E3;
+        padding: 36px;
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .content {
+        padding: 10px;
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+      .content2 {
+        padding: 10px;
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+      .content3 {
+        padding: 10px;
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+      .body {
+          margin: 20px;
+          text-align: center;
+      }
+      .img {
+          float: right;
+          margin: 5px;
+        }
+       #content {
+          text-align: justify;
+          font-size: 20px;
+      }
+      #footer {
+        background-color: lightgrey;
+        margin: 70px;
+        padding: 24px;
+        font-size: 25px;
+      }
+      #Home {
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      #Gallery {
+          color: black;
+          text-decoration: none;
+          font-size: 25px;
+      }
+      #AboutMe {
+          color: black;
+          text-decoration: none;
+          font-size: 25px;
+      }
+      #Contact {
+          color: black;
+          text-decoration: none;
+          font-size: 25px;
+      }
+      #OldPage {
+          color: black;
+          text-decoration: none;
+          font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="header">
+      <h1 style="font-size: 45px;">Portfolio</h1>
+      </div>
+      <div class="nav">
+        <body>
+          <nav>
+              <li><a id="Home" href="https://www.instagram.com/anto_flo_g/">Home</a></li>
+              <li><a id="Gallery" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Gallery.html">Gallery</a></li>
+              <li><a id="AboutMe" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Aboutme.html">About Me</a></li>
+              <li><a id="Contact" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Contact.html">Contact</a></li>
+              <li><a id="OldPage" href="https://antoflogom.github.io/Assignments/checkpoint2.html">Old Page</a></li>
+              </nav>
+              </body>
+      </div>
+      <div class="content">
+        <img src="https://pbs.twimg.com/media/Ex_YndsXIAEQA6g.jpg" align="right" style="width:200px" alt="bg">
+        <div>
+          Cillum instituendarum commodo aute laboris, veniam ingeniis
+          familiaritatem. Sint non proident e deserunt consectetur hic
+          vidisse. Ea duis senserit deserunt.Cernantur anim
+          expetendis, consequat quem ullamco, occaecat ea multos
+          eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+          laboris illum, ab nostrud te singulis. Ingeniis export ita
+          doctrina voluptatibus hic officia o irure, eu nostrud
+          consectetur, nam iis enim dolor minim.
+        </div>
+        <div class="content2">
+          <img src="https://www.discoverpuertorico.com/sites/default/files/styles/horizontal/public/2021-01/191-3-11896_jpeg.jpg?h=10d202d3&itok=a5mmcFjW" align="left" style="width:200px" alt="town">
+          <div>
+            Cillum instituendarum commodo aute laboris, veniam ingeniis
+            familiaritatem. Sint non proident e deserunt consectetur hic
+            vidisse. Ea duis senserit deserunt.Cernantur anim
+            expetendis, consequat quem ullamco, occaecat ea multos
+            eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+            laboris illum, ab nostrud te singulis. Ingeniis export ita
+            doctrina voluptatibus hic officia o irure, eu nostrud
+            consectetur, nam iis enim dolor minim.
+          </div>
+        </div>
+        <div class="content3">
+          <img src="https://itp.live/cloud/2021/12/13/Y3w4eor7-sidemencoverimage_4.jpg" align="right" style="width:200px" alt="sdmn">
+          <div>
+            Cillum instituendarum commodo aute laboris, veniam ingeniis
+            familiaritatem. Sint non proident e deserunt consectetur hic
+            vidisse. Ea duis senserit deserunt.Cernantur anim
+            expetendis, consequat quem ullamco, occaecat ea multos
+            eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+            laboris illum, ab nostrud te singulis. Ingeniis export ita
+            doctrina voluptatibus hic officia o irure, eu nostrud
+            consectetur, nam iis enim dolor minim.
+          </div>
+        </div>
+          <div id="footer">@ 2022 Antoniel FG. All rights reserved.</div>
+      </div>
+    </div>
+  </body>
+</html>
