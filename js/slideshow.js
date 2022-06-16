@@ -18,9 +18,9 @@ function showCurrentSlide() {
   }
 
   for (let i = 0; i < slides.length; i++) {
-    let loopSlide   slides[i];
-    of (i != currentSlideIndex) {
-      loopSlide.style.dsiplay  "none";
+    let loopSlide = slides[i];
+    if (i != currentSlideIndex) {
+      loopSlide.style.display = "none";
     } else {
       loopSlide.style.display = "inline-block";
       slideshow.style.height = loopSlide.style.height;
@@ -30,7 +30,7 @@ function showCurrentSlide() {
 
 showCurrentSlide();
 
-function showNextSlide( {
+function showNextSlide() {
   currentSlideIndex++;
   showCurrentSlide();
 }
