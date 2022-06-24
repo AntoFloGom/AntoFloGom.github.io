@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>About Me</title>
+  <style>
+    body {
+     background-image: url("https://img.freepik.com/free-vector/abstract-organic-lines-background_1017-26669.jpg?w=2000");
+     background-size: cover;
+     background-repeat: repeat;
+
+   }
+  nav ul {
+    background-color: lightgrey;
+    List-style-type: none;
+    margin: 0px;
+    padding: 0px
+    }
+
+    nav ul li {
+      background-color: lightgrey;
+      display: inline-block;
+      padding: 12px 24px;
+    }
+    center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    nav ul li:hover {
+      background-color: darkgrey;
+      color: white;
+    }
+    nav ul li:active {
+      background-color: black;
+      color: white;
+    }
+    #Gallery {
+      color: black;
+      text-decoration: none;
+    }
+
+    #AboutMe {
+        color: black;
+        text-decoration: none;
+      }
+      #Home {
+          color: black;
+          text-decoration: none;
+        }
+        body {
+          margin: 0px;
+        }
+        #hero {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 500px;
+        }
+        #countdown {
+          display: inline-block;
+        }
+  </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a id="Home" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Assignments/checkpoint1.html">Home</a></li>
+      <li><a id="Gallery" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Gallery.html">Gallery</a></li>
+        <li><a id="AboutMe" href="file:///C:/Users/ashfl/OneDrive/Documents/GitHub/AntoFloGom.github.io/Aboutme.html">About Me</a></li>
+        <li>Contact</li>
+        </ul>
+        </nav>
+        </body>
+  <body>
+    <h1>Hi, I'm Antoniel Flores Gomez.</h1>
+  </body>
+  <img src="https://styles.redditmedia.com/t5_293j7u/styles/profileIcon_91m59ekl2kz81.jpg?width=256&height=256&crop=256:256,smart&s=ac22fa06ebfabc4bd9ec6c9294e5ce8f2c037630" style="width:25%" alt="Me" class="center">
+
+    <body>
+      <h2>I'm a freelance Graphic Designer from Tampa, FL</h2>
+      <h2>I'm 19 years old, I've been designing for over 3 years now, and hope to continue for more years to come...</h2>
+      <h2>(This is how long til I graduate!  ↓)
+      </head>
+      <body>
+        <div id="hero">
+          <h1 id="countdown">Placeholder</h1>
+        </div>
+        <script type="text/javascript">
+        let deadline = new Date("January 1, 2023 23:00:00");
+        let countdown = document.getElementById("countdown");
+        countdown.innerHTML = "";
+
+          function setCountdown() {
+            let now = new Date();
+
+            // # of milliseconds between deadline and now
+            let timeLeft = deadline.getTime() - now.getTime();
+
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(
+              (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            let minutes = Math.floor(
+              (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            let seconds = Math.floor(
+              (timeLeft % (1000 * 60)) / 1000
+            );
+
+            countdown.innerHTML =
+              `${days}d ${hours}h ${minutes}m ${seconds}s left`;
+           }
+
+           setInterval(setCountdown, 1000);
+          </script>
+        </body>
+</body>
+</html>
